@@ -1,0 +1,8 @@
+Condition,Name,L1,rep
+KO,exp1KO,1,1
+WT,exp1WT,2,1
+KO,exp2KO,3,2
+WT,exp2WT,4,2
+KO,exp3KO,5,3
+WT,exp3WT,6,3
+WT,exp4WT,7,4
