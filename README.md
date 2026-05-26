@@ -4,7 +4,7 @@ GENERAL INFORMATION
 
 This readme file was generated on [2026-05-26] by [Emily Meeus] 
 
-This repository contains the R scripts and source data tables used to generate the expression, morphology, and developmental phenotype analyses reported in the paper “ATP13A4 gates extracellular polyamine levels to control excitatory synaptogenesis”. 
+This repository contains the R scripts and source data tables used to generate the expression, morphology, and developmental phenotype analyses reported in the paper “ATP13A4 gates extracellular polyamine levels to control excitatory synaptogenesis” (https://www.medrxiv.org/content/10.1101/2025.04.04.25325117v1). 
 
 ————————
 FOLDER STRUCTURE
