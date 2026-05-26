@@ -12,63 +12,58 @@ FOLDER STRUCTURE
 ————————
 
 van-Veen-et-al.-2026/
-├── LICENSE
-├── README.md
-├── expression analysis/
-│   ├── Bakken et al., 2021.R         
-│   ├── Jorstad et al., 2023.R        
-│   ├── Saunders et al., 2018.R       
-│   ├── Schaum et al., 2018.R        
-│   ├── Zhang et al., 2014.R          
-│   └── Zhang et al., 2016.R          
-├── sholl analysis/
-│   ├── exp1KO.csv … exp4WT.csv     
-│   ├── key.csv                      
-│   └── script                        
-└── Fig. 6 analysis/
-    ├── eye_opening.xlsx             
-    ├── eye_opening_females.xlsx      
-    ├── eye_opening_males.xlsx        
-    ├── weight.xlsx                  
-    ├── weight_females.xlsx           
-    ├── weight_males.xlsx             
-    ├── script_eyeopening.R           
-    └── script_weight.R              
+   
+    LICENSE
+    README.md
+
+    expression analysis/
+        Bakken et al., 2021.R
+        Jorstad et al., 2023.R
+        Saunders et al., 2018.R
+        Schaum et al., 2018.R
+        Zhang et al., 2014.R
+        Zhang et al., 2016.R
+
+    sholl analysis/
+        exp1KO.csv … exp4WT.csv
+        key.csv
+        script
+
+    Fig. 6 analysis/
+        eye_opening.xlsx
+        eye_opening_females.xlsx
+        eye_opening_males.xlsx
+        weight.xlsx
+        weight_females.xlsx
+        weight_males.xlsx
+        script_eyeopening.R
+        script_weight.R          
 
 ————————
 SOFTWARE REQUIREMENTS
 ————————
 
-- **R** ≥ 4.2.0
-- **RStudio** 
+- R (version 4.4.3)
+- RStudio 
 
 Install once before running:
 
-install.packages(c(
-  # data wrangling
-  "tidyverse",      
-  "data.table",
-  "readxl",
-  # mixed models & stats
-  "lme4", "lmerTest",   
-  "ordinal",            
-  "nlme",               
-  "car", "multcomp",    
-  # plotting / reshape
-  "pheatmap",
-  "reshape",            
-  # interactive helper
-  "rstudioapi"
-))
+Data wrangling: install.packages(c("tidyverse", "data.table", "readxl")
+
+Mixed models and stat: install.packages(c("lme4", "lmerTest", "ordinal", "nlme", "car", "multcomp")
+
+Plotting and reshaping: install.packages(c("pheatmap", "reshape")
+
+Rstudio helper: install.packages(c("rstudioapi")
 
 ————————
-DOCUMENTATION AND WORKING EXAMPLE
+INPUT DATA
 ————————
 
 Two categories:
 
-1. **Included in this repository** — the inputs (Excel/CSV) required for the Sholl and Figure 6 analyses are versioned alongside the scripts.
-2. **Downloaded separately** — the expression analyses parse publicly available datasets. Each script reads files from a working directory the user sets at the top.
+1. Included in this repository — the inputs (Excel/CSV) required for the Sholl and Figure 6 analyses are versioned alongside the scripts.
+2. Downloaded separately — the expression analyses publicly available datasets. Each script reads files from a working directory the user sets at the top.
 
 ### Public datasets used in `expression analysis/`
 
@@ -81,7 +76,7 @@ Two categories:
 | Zhang et al., 2014.R | Mouse cortex purified cell-type bulk RNA-seq (FPKM) | brainrnaseq.org |
 | Zhang et al., 2016.R | Human cortex purified cell-type bulk RNA-seq | brainrnaseq.org |
 
-Place the downloaded files in the working directory the script declares (currently `C:/Users/u0171728/Downloads/...`) or edit the `setwd()` line at the top of each script to point to your local copy.
+Edit the `setwd()` line at the top of each script to point to your local working directory, and place the downloaded files in that working directory.
 
 ### Inputs included for `sholl analysis/`
 
@@ -93,6 +88,10 @@ Place the downloaded files in the working directory the script declares (current
 - `eye_opening*.xlsx` — columns: `animal`, `genotype` (WT/KO), `day` (postnatal day), `score` (0 = closed, 1 = partial, 2 = fully open).
 - `weight*.xlsx` — columns: `animal`, `genotype` (WT/KO), `day` (postnatal day), `weight` (g).
 - `*_females` / `*_males` files contain the corresponding sex-stratified subsets.
+
+————————
+WORKING EXAMPLE
+————————
 
 ### Expression analysis
 
