@@ -4,8 +4,7 @@ GENERAL INFORMATION
 
 This readme file was generated on [2026-05-26] by [Emily Meeus] 
 
-Description of Dataset: Dataset used in the paper “ATP13A4 gates extracellular polyamine levels to control excitatory synaptogenesis”. 
-This repository contains the R scripts and source data tables used to generate the expression, morphology, and developmental phenotype analyses reported in the paper.
+This repository contains the R scripts and source data tables used to generate the expression, morphology, and developmental phenotype analyses reported in the paper “ATP13A4 gates extracellular polyamine levels to control excitatory synaptogenesis”. 
 
 ————————
 FOLDER STRUCTURE
@@ -69,12 +68,12 @@ Two categories:
 
 | Script | Source dataset | Where to obtain |
 |---|---|---|
-| Bakken et al., 2021.R | Comparative LGN single-nucleus RNA-seq (human, macaque, mouse) | Allen Brain Map — Cell Types Database (LGN, 2021) |
-| Jorstad et al., 2023.R | Human MTG single-nucleus RNA-seq | Allen Brain Map (MTG SMART-seq, 2018-06-14 release) |
-| Saunders et al., 2018.R | Mouse brain cell atlas (Drop-seq metacells) | DropViz — `metacells.BrainCellAtlas_Saunders_version_2018.04.01.rds` and `annotation...rds` |
-| Schaum et al., 2018.R | Tabula Muris (Brain FACS counts + annotations) | figshare / tabula-muris.ds.czbiohub.org |
-| Zhang et al., 2014.R | Mouse cortex purified cell-type bulk RNA-seq (FPKM) | brainrnaseq.org |
-| Zhang et al., 2016.R | Human cortex purified cell-type bulk RNA-seq | brainrnaseq.org |
+| Bakken et al., 2021.R | https://doi.org/10.7554/eLife.64875 | Allen Brain Map — Cell Types Database (LGN, 2021) |
+| Jorstad et al., 2023.R | https://doi.org/10.1126/science.adf6812 | Allen Brain Map (MTG SMART-seq, 2018-06-14 release) |
+| Saunders et al., 2018.R | https://doi.org/10.1016/j.cell.2018.07.028 | DropViz — `metacells.BrainCellAtlas_Saunders_version_2018.04.01.rds` and `annotation...rds` |
+| Schaum et al., 2018.R | https://doi.org/10.1038/s41586-018-0590-4 | figshare / tabula-muris.ds.czbiohub.org |
+| Zhang et al., 2014.R | https://doi.org/10.1523/JNEUROSCI.1860-14.2014 | brainrnaseq.org |
+| Zhang et al., 2016.R | https://doi.org/10.1016/j.neuron.2015.11.013 | brainrnaseq.org |
 
 Edit the `setwd()` line at the top of each script to point to your local working directory, and place the downloaded files in that working directory.
 
