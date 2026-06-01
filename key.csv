@@ -1,0 +1,7 @@
+Condition,Name,L1,rep
+KO,exp1_KO.csv,1,1
+WTdel,exp1_Wtdel.csv,2,1
+WTrescue,exp1_Wtrescue.csv,3,1
+KO,exp3_KO.csv,4,2
+WTdel,exp3_Wtdel.csv,5,2
+WTrescue,exp3_Wtrescue.csv,6,2
