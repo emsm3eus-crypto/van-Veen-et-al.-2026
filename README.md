@@ -66,7 +66,7 @@ INPUT DATA
 
 Two categories:
 
-1. Included in this repository — the inputs (Excel/CSV) required for the Sholl and Figure 6 analyses are versioned alongside the scripts.
+1. Included in this repository — the inputs (Excel/CSV) required for the sholl and Figure 6 analyses are versioned alongside the scripts.
 2. Downloaded separately — the expression analyses publicly available datasets. Each script reads files from a working directory the user sets at the top.
 
 ### Public datasets used in `expression analysis/`
@@ -107,7 +107,7 @@ Each `expression analysis/*.R` script is independent.
 
 ### Sholl analysis
 
-1. Open `sholl analysis/script` in RStudio.
+1. Open the script in RStudio.
 2. When prompted by `selectDirectory()`, choose the `sholl analysis/` folder of this repository.
 3. Run the script. 
 
