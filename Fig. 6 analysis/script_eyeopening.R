@@ -68,36 +68,6 @@ df %>%
   distinct(animal, genotype) %>%
   count(genotype)
 
-library(dplyr)
 
-# Prepare data
-df_clean <- df %>%
-  mutate(score_num = as.numeric(as.character(score)))
 
-# Per-day Wilcoxon tests 
-per_day_tests <- df_clean %>%
-  group_by(day) %>%
-  summarise(
-    WT_mean = mean(score_num[genotype == "WT"]),
-    KO_mean = mean(score_num[genotype == "KO"]),
-    
-    # Only run test if there is variation
-    p_value = if (length(unique(score_num)) < 2) NA_real_
-    else wilcox.test(score_num ~ genotype, exact = FALSE)$p.value,
-    
-    .groups = "drop"
-  ) %>%
-  mutate(
-    significance = case_when(
-      is.na(p_value) ~ "no variation",
-      p_value < 0.001 ~ "***",
-      p_value < 0.01 ~ "**",
-      p_value < 0.05 ~ "*",
-      TRUE ~ "ns"
-    )
-  ) %>%
-  arrange(day)
-
-# Show ALL days
-print(per_day_tests, n = Inf)
 
