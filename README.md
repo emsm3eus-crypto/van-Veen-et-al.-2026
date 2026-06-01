@@ -84,7 +84,7 @@ Edit the `setwd()` line at the top of each script to point to your local working
 
 ### Inputs included for `sholl analysis/` and `sholl analysis 2/`
 
-- `exp1KO.csv … exp4WT.csv` — per-experiment Sholl intersection counts. First column = `Radius` (µm); subsequent columns = individual cells/images. Semicolon-separated.
+- csv files — per-experiment Sholl intersection counts. First column = `Radius` (µm); subsequent columns = individual cells/images. Semicolon-separated.
 - `key.csv` — maps each input file name to its `Condition` and replicate number.
 
 ### Inputs included for `Fig. 6 analysis/`
