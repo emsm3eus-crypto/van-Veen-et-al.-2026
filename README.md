@@ -28,6 +28,11 @@ van-Veen-et-al.-2026/
         key.csv
         script
 
+    sholl analysis 2/
+        exp1KO.csv … exp3WTrescue.csv
+        key.csv
+        rescue_script
+
     Fig. 6 analysis/
         eye_opening.xlsx
         eye_opening_females.xlsx
@@ -51,7 +56,7 @@ Data wrangling: install.packages(c("tidyverse", "data.table", "readxl")
 
 Mixed models and stat: install.packages(c("lme4", "lmerTest", "ordinal", "nlme", "car", "multcomp")
 
-Plotting and reshaping: install.packages(c("pheatmap", "reshape")
+Plotting and reshaping: install.packages(c("pheatmap", "reshape", "ggplot2")
 
 Rstudio helper: install.packages(c("rstudioapi")
 
@@ -77,10 +82,10 @@ Two categories:
 
 Edit the `setwd()` line at the top of each script to point to your local working directory, and place the downloaded files in that working directory.
 
-### Inputs included for `sholl analysis/`
+### Inputs included for `sholl analysis/` and `sholl analysis 2/`
 
 - `exp1KO.csv … exp4WT.csv` — per-experiment Sholl intersection counts. First column = `Radius` (µm); subsequent columns = individual cells/images. Semicolon-separated.
-- `key.csv` — maps each input file name to its `Condition` (WT/KO) and replicate number.
+- `key.csv` — maps each input file name to its `Condition` and replicate number.
 
 ### Inputs included for `Fig. 6 analysis/`
 
