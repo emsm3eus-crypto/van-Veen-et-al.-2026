@@ -14,8 +14,8 @@ van-Veen-et-al.-2026/
    
     LICENSE
     README.md
-
-dev. milestones (fig. 6)/
+    
+    dev. milestones (fig. 6)/
         eye_opening.xlsx
         eye_opening_females.xlsx
         eye_opening_males.xlsx
