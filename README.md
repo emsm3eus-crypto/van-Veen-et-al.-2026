@@ -15,25 +15,7 @@ van-Veen-et-al.-2026/
     LICENSE
     README.md
 
-    expression analysis/
-        Bakken et al., 2021.R
-        Jorstad et al., 2023.R
-        Saunders et al., 2018.R
-        Schaum et al., 2018.R
-        Zhang et al., 2014.R
-        Zhang et al., 2016.R
-
-    sholl analysis/
-        exp1KO.csv … exp4WT.csv
-        key.csv
-        script
-
-    sholl analysis 2/
-        exp1KO.csv … exp3WTrescue.csv
-        key.csv
-        rescue_script
-
-    Fig. 6 analysis/
+   dev. milestones (fig. 6)/
         eye_opening.xlsx
         eye_opening_females.xlsx
         eye_opening_males.xlsx
@@ -41,7 +23,25 @@ van-Veen-et-al.-2026/
         weight_females.xlsx
         weight_males.xlsx
         script_eyeopening.R
-        script_weight.R          
+        script_weight.R    
+
+    expression (supp.fig. 1-2)/
+        Bakken et al., 2021.R
+        Jorstad et al., 2023.R
+        Saunders et al., 2018.R
+        Schaum et al., 2018.R
+        Zhang et al., 2014.R
+        Zhang et al., 2016.R
+
+    sholl analysis (fig. 3e)/
+        exp1KO.csv … exp4WT.csv
+        key.csv
+        script
+
+    sholl analysis (supp. fig. 9b)/
+        exp1KO.csv … exp3WTrescue.csv
+        key.csv
+        rescue_script      
 
 ————————
 SOFTWARE REQUIREMENTS
@@ -66,10 +66,10 @@ INPUT DATA
 
 Two categories:
 
-1. Included in this repository — the inputs (Excel/CSV) required for the sholl and Figure 6 analyses are versioned alongside the scripts.
+1. Included in this repository — the inputs (Excel/CSV) required for the sholl and expression analysis are versioned alongside the scripts.
 2. Downloaded separately — the expression analyses publicly available datasets. Each script reads files from a working directory the user sets at the top.
 
-### Public datasets used in `expression analysis/`
+### Public datasets used in `expression (supp. fig. 1-2)/`
 
 | Script | Source dataset | Where to obtain |
 |---|---|---|
@@ -82,12 +82,12 @@ Two categories:
 
 Edit the `setwd()` line at the top of each script to point to your local working directory, and place the downloaded files in that working directory.
 
-### Inputs included for `sholl analysis/` and `sholl analysis 2/`
+### Inputs included for `sholl analysis (fig. 3e)/` and `sholl analysis (supp. fig. 9b)/`
 
 - csv files — per-experiment Sholl intersection counts. First column = `Radius` (µm); subsequent columns = individual cells/images. Semicolon-separated.
 - `key.csv` — maps each input file name to its `Condition` and replicate number.
 
-### Inputs included for `Fig. 6 analysis/`
+### Inputs included for `dev. milestones (fig. 6)/`
 
 - `eye_opening*.xlsx` — columns: `animal`, `genotype` (WT/KO), `day` (postnatal day), `score` (0 = closed, 1 = partial, 2 = fully open).
 - `weight*.xlsx` — columns: `animal`, `genotype` (WT/KO), `day` (postnatal day), `weight` (g).
@@ -111,7 +111,7 @@ Each `expression analysis/*.R` script is independent.
 2. When prompted by `selectDirectory()`, choose the `sholl analysis/` folder of this repository.
 3. Run the script. 
 
-### Fig. 6 analysis
+### Dev. Milestones analysis
 
 Two scripts, one per phenotype:
 
