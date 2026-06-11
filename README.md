@@ -33,6 +33,7 @@ van-Veen-et-al.-2026/
         Schaum et al., 2018.R
         Zhang et al., 2014.R
         Zhang et al., 2016.R
+        renv.lock
 
     sholl analysis (fig. 3e)/
         exp1KO.csv … exp4WT.csv
