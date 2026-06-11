@@ -23,7 +23,8 @@ van-Veen-et-al.-2026/
         weight_females.xlsx
         weight_males.xlsx
         script_eyeopening.R
-        script_weight.R    
+        script_weight.R 
+        renv.lock
 
     expression (supp.fig. 1-2)/
         Bakken et al., 2021.R
@@ -37,11 +38,13 @@ van-Veen-et-al.-2026/
         exp1KO.csv … exp4WT.csv
         key.csv
         script
+        renv.lock
 
     sholl analysis (supp. fig. 9b)/
         exp1KO.csv … exp3WTrescue.csv
         key.csv
-        rescue_script      
+        rescue_script
+        renv.lock
 
 ————————
 SOFTWARE REQUIREMENTS
@@ -59,6 +62,8 @@ Mixed models and stat: install.packages(c("lme4", "lmerTest", "ordinal", "nlme",
 Plotting and reshaping: install.packages(c("pheatmap", "reshape", "ggplot2")
 
 Rstudio helper: install.packages(c("rstudioapi")
+
+A renv.lock file has been deposited to recreate the computational environment. 
 
 ————————
 INPUT DATA
